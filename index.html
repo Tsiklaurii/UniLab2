@@ -1,11 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UniLab2</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+    <h1>Text comparator</h1>
+    <div class="container">
+        <div class="left-side">
+            <div class="left-joke">
+                <h3>Left Joke</h3>
+                <div id="left"></div>
+            </div>
+            <button onclick="fetchLeftJoke()">Generate</button>
+        </div>
+        <div class="compare">
+            <div class="match">
+                <button onclick="match()">Compare</button>
+                <p><span id="match">0</span> match</p>
+            </div>
+            <div class="length">
+                <button onclick="lengthDifference()">Compare</button>
+                <p><span id="lenght">0</span> lenght difference</p>
+            </div>
+            <div class="words-difference">
+                <button onclick="wordsDifference()">Compare</button>
+                <p><span id="word">0</span> word difference</p>
+            </div>
+        </div>
+        <div class="right-side">
+            <div class="right-joke">
+                <h3>Right Joke</h3>
+                <div id="right"></div>
+            </div>
+            <button onclick="fetchRightJoke()">Generate</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
+
 </html>
